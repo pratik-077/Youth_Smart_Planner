@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diet and Workouts Recommendations</title>
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body style="background:black;color:white">
+    <div class="container mycont mt-5" style="background:white;color:black;border-radius:15px; padding:10px;">
+        <h1 class="text-center">Diet and Workouts Recommendations</h1>
+
+        <form action="/recommend" method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select class="form-control" id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" class="form-control" id="weight" name="weight">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="height">Height (m):</label>
+                        <input type="number" class="form-control" id="height" name="height" step="0.01">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="veg_or_nonveg">Veg or Non-Veg:</label>
+                        <select class="form-control" id="veg_or_nonveg" name="veg_or_nonveg">
+                            <option value="veg">Veg</option>
+                            <option value="nonveg">Non-Veg</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="disease">Generic Disease:</label>
+                        <input type="text" class="form-control" id="disease" name="disease">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="region">Region:</label>
+                        <input type="text" class="form-control" id="region" name="region">
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="allergics">Allergics:</label>
+                        <input type="text" class="form-control" id="allergics" name="allergics">
+                    </div>
+                </div>
+            </div>
+
+<div class ="row">
+    <div class="col-md-6">
+            <div class="form-group">
+                <label for="step_count">Daily Step Count:</label>
+                <input type="text" class="form-control" id="step_count" name="step_count">
+            </div>
+</div>
+            <div class="col-md-6">
+            <div class="form-group">
+                <label for="foodtype">Food Type:</label>
+                <input type="text" class="form-control" id="foodtype" name="foodtype">
+            </div>
+            </div>
+</div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="heart_rate">Heart Rate:</label>
+                        <input type="number" class="form-control" id="heart_rate" name="heart_rate">
+                    </div>
+                </div>
+            
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="caloric_expenditure">Caloric Expenditure:</label>
+                        <input type="number" class="form-control" id="caloric_expenditure" name="caloric_expenditure">
+                    </div>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-danger btn-lrg " style="width:50%; padding:1px;margin-left:25%; font-weight:bold">Recommend Diets</button>
+        </form>
+    </div>
